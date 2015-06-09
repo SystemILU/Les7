@@ -60,13 +60,13 @@ public class RegisterServlet extends HttpServlet {
 			try 
 			{
 			MimeMessage msg = new MimeMessage(mailSession);
-			msg.setFrom(new InternetAddress("kirsten.spies@gmail.com", "Kirsten Spies"));
+			msg.setFrom(new InternetAddress("..", ".."));
 			msg.setRecipients(Message.RecipientType.TO, emailaddress);
 			msg.setSubject("Your registration has been completed!");
 			msg.setSentDate(Calendar.getInstance().getTime());
 			msg.setText("Hello " + realname + "! \n\n Thank you for registering with us, your login details are as follows: \n\n"
 					+ username + "\n" + password + "\n\n We hope you have a great time on our website ;)! \n\n Kind regards, \n Kirsten");
-			Transport.send(msg, "kirstespies@gmail.com", "//");
+			Transport.send(msg, "..", "//");
 
 			}
 
