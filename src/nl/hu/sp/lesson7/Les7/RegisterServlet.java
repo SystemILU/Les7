@@ -66,7 +66,7 @@ public class RegisterServlet extends HttpServlet {
 			msg.setSentDate(Calendar.getInstance().getTime());
 			msg.setText("Hello " + realname + "! \n\n Thank you for registering with us, your login details are as follows: \n\n"
 					+ username + "\n" + password + "\n\n We hope you have a great time on our website ;)! \n\n Kind regards, \n Kirsten");
-			Transport.send(msg, "kirsten.spies@gmail.com", "koekiemonsters12");
+			Transport.send(msg, "kirstespies@gmail.com", "//");
 
 			}
 
